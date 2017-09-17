@@ -111,6 +111,9 @@ extension CountryKit {
 
 extension CountryKit: Sequence {
 
+  /// **CountryKit**
+  ///
+  /// Returns an iterator over the list of countries.
   public func makeIterator() -> AnyIterator<Country> {
     var index = 0
 
