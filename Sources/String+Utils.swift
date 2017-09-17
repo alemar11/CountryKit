@@ -1,4 +1,4 @@
-// 
+//
 // CountryKit
 //
 // Copyright © 2016-2017 Tinrobots.
@@ -24,26 +24,26 @@
 import Foundation
 
 extension Character {
-  
+
   /// Returns `true` if `self` is a flag.
   var isFlag: Bool {
     let scalars = unicodeScalars
     return scalars.count == 2 && scalars.first!.isRegionalIndicator && scalars.last!.isRegionalIndicator
   }
-  
+
 }
 
 extension Unicode.Scalar {
-  
+
   /// Returns `true` if `self` is a regional indicator.
   var isRegionalIndicator: Bool {
     return ("🇦"..."🇿").contains(self)
   }
-  
+
 }
 
 extension String {
-  
+
   // self.contains { $0.isFlag }
   // self.filter { $0.isFlag }
   /// Returns `true` if `self` is an emoji flag.
@@ -51,5 +51,5 @@ extension String {
     guard characters.count == 1 else { return false }
     return characters.first!.isFlag
   }
-  
+
 }

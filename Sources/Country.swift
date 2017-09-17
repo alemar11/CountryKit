@@ -88,22 +88,22 @@ open class Country: Codable {
   public var localizedName: String {
     let locale = NSLocale.current as NSLocale
     let name = locale.displayName(forKey: .countryCode, value: iso)
-    
+
     return name ?? ""
   }
-  
+
   /// **CountryKit**
   ///
   /// Returns the country's flag emoji.
   public var emoji: String {
     let country = iso.uppercased()
     let emoji = country.unicodeScalars.flatMap { UnicodeScalar(127397 + $0.value) }.map { String($0) }.joined()
-    
+
 //    for unicodeScalar in country.unicodeScalars {
 //      let scalar = UnicodeScalar(127397 + unicodeScalar.value)!
 //      emoji.append(String(scalar))
 //    }
-    
+
     return emoji
   }
 
@@ -124,5 +124,5 @@ open class Country: Codable {
     case phoneCode
     case countryCode
   }
-  
+
 }

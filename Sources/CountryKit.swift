@@ -39,16 +39,16 @@ internal let bundle = Bundle(identifier: bundleIdentifier)!
 
 /// **CountryKit**
 final public class CountryKit {
-  
+
   // MARK: - Properties
-  
+
   /// **CountryKit**
   ///
   /// Returns all the countries.
   public let countries: [Country]
-  
+
   // MARK: - Initializers
-  
+
   /// **CountryKit**
   ///
   /// Initializer.
@@ -60,31 +60,31 @@ final public class CountryKit {
       else {
         fatalError("No countries found in CountryKit.")
     }
-    
+
     self.countries = countries
   }
-  
+
   /// **CountryKit**
   ///
   /// Returns a country (is any) that matches a given `ìsoCode`.
   public func searchByIsoCode(_ isoCode: String) -> Country? {
     let countries = self.countries.filter { $0.iso.lowercased() == isoCode.lowercased() }
-    
+
     return countries.first
   }
-  
+
 }
 
 // MARK: - Utils
 
 extension CountryKit {
-  
+
   /// **CountryKit**
   ///
   /// Returns the current user's country.
   public var current: Country? {
     var countryCode: String?
-    
+
     if let regionCode = Locale.current.regionCode {
       countryCode = regionCode
     } else if let isoCode = currentSubscriberCelluparProviderIsoCountryCode() {
@@ -93,7 +93,7 @@ extension CountryKit {
 
     guard let code = countryCode else { return nil }
     let country = searchByIsoCode(code)
-    
+
     return country
   }
 
@@ -104,25 +104,25 @@ extension CountryKit {
       return nil
     #endif
   }
-  
+
 }
 
 // MARK: - Sequence
 
 extension CountryKit: Sequence {
-  
+
   public func makeIterator() -> AnyIterator<Country> {
     var index = 0
-    
+
     return AnyIterator {
       guard index < self.countries.count else { return nil }
-      
+
       let country = self.countries[index]
       index = self.countries.index(after: index)
-      
+
       return country
     }
-    
+
   }
-  
+
 }
