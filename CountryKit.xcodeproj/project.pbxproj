@@ -18,6 +18,17 @@
 			name = "Cleanup Whitespace";
 			productName = "Cleanup Whitespace";
 		};
+		2363FECF1F6E6D020067257A /* SwiftLint */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 2363FED01F6E6D020067257A /* Build configuration list for PBXAggregateTarget "SwiftLint" */;
+			buildPhases = (
+				2363FED31F6E6D080067257A /* SwiftLint */,
+			);
+			dependencies = (
+			);
+			name = SwiftLint;
+			productName = SwiftLint;
+		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
@@ -404,6 +415,10 @@
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
 					};
+					2363FECF1F6E6D020067257A = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
 					23754A6C1F6ABD18007B4E6D = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
@@ -440,6 +455,7 @@
 				2333D12E1F6AB9020037C615 /* CountryKit tvOS Tests */,
 				23754A6C1F6ABD18007B4E6D /* CountryKit watchOS */,
 				2363FECA1F6E6C810067257A /* Cleanup Whitespace */,
+				2363FECF1F6E6D020067257A /* SwiftLint */,
 			);
 		};
 /* End PBXProject section */
@@ -518,6 +534,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "#!/bin/sh\ndirectories=(Sources Tests)\n\nfor directory in \"${directories[@]}\"\ndo\necho \"Cleaning whitespace in directory: $directory\"\nfind $directory -iregex '.*\\.swift' -exec sed -E -i '' -e 's/[[:blank:]]*$//' {} \\;\ndone";
+		};
+		2363FED31F6E6D080067257A /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -778,6 +808,22 @@
 			name = Debug;
 		};
 		2363FECC1F6E6C810067257A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2363FED11F6E6D020067257A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2363FED21F6E6D020067257A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -1078,6 +1124,15 @@
 			buildConfigurations = (
 				2363FECB1F6E6C810067257A /* Debug */,
 				2363FECC1F6E6C810067257A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2363FED01F6E6D020067257A /* Build configuration list for PBXAggregateTarget "SwiftLint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2363FED11F6E6D020067257A /* Debug */,
+				2363FED21F6E6D020067257A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

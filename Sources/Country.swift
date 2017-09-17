@@ -63,7 +63,6 @@ open class Country: Codable {
   /// Country code.
   public let countryCode: Int?
 
-
   #if !os(watchOS)
 
   /// **CountryKit**
