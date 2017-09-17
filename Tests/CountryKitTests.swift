@@ -61,7 +61,7 @@ class CountryKitTests: XCTestCase {
   func testMissingFlag() {
     let iterator = sut.makeIterator()
 
-    for (_, country) in iterator.enumerated() {
+    for country in sut.countries {
       XCTAssertNotNil(country.flagImage, "\(country) should have a flag image.")
     }
 
@@ -87,7 +87,7 @@ class CountryKitTests: XCTestCase {
 
   }
 
-  func testSearchBy() {
+  func testSearchByIsoCode() {
     let italy = sut.searchByIsoCode("IT")
     XCTAssertNotNil(italy)
     XCTAssertNotNil(italy?.flagImage)
@@ -111,6 +111,3 @@ class CountryKitTests: XCTestCase {
   }
 
 }
-
-
-

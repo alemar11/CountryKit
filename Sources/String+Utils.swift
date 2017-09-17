@@ -47,7 +47,7 @@ extension Unicode.Scalar {
 }
 
 extension String {
-  
+
   /// **CountryKit**
   ///
   /// Returns `true` if `self` is an emoji flag.
