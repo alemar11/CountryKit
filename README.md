@@ -14,10 +14,11 @@
 ## CountryKit
 [![GitHub release](https://img.shields.io/github/release/tinrobots/CountryKit.svg)](https://github.com/tinrobots/CountryKit/releases) 
 
-A μlibrary in Swift with all the countries with their ISO code, phone code, country code, flag image and flag emoji.
+A μlibrary in Swift containing all the countries with their localized name, ISO code, phone code, country code, flag image and emoji.
 
 - [Requirements](#requirements)
 - [Documentation](#documentation)
+- [Usage](#usage)
 - [Installation](#installation)
 - [License](#license)
 
@@ -32,6 +33,33 @@ A μlibrary in Swift with all the countries with their ISO code, phone code, cou
 Documentation is [available online](http://www.tinrobots.org/CountryKit/).
 
 > [http://www.tinrobots.org/CountryKit/](http://www.tinrobots.org/CountryKit/)
+
+## Usage
+
+Instantiate CountryKit and obtain a list of all countries:
+
+```
+let countryKit = CountryKit()
+let countries = countryKit.countries
+```
+
+Get the system current country:
+```
+let country = countryKit.current
+```
+
+Search a country by its ISO code:
+
+```
+let italy = countryKit.searchByIsoCode("IT")
+```
+
+Iterate over the countries with an iterator:
+
+```
+let iterator = countryKit.makeIterator()
+```
+
 
 ## Installation
 
@@ -122,32 +150,3 @@ $ git submodule add https://github.com/tinrobots/CountryKit.git
 [![License MIT](https://img.shields.io/badge/License-MIT-lightgrey.svg?style=flat)](https://github.com/alemar11/Console/blob/master/LICENSE)
 
 CountryKit is released under the MIT license. See [LICENSE](./LICENSE.md) for details.
-
----
-
-## Usage
-
-Instantiate CountryKit and obtain a list of all countries:
-
-```
-let kit = CountryKit()
-let countries = kit.countries
-```
-
-Get the system current country:
-```
-let country = kit.current
-```
-
-Search a country by its iso code:
-
-```
-let italy = kit.searchByIsoCode("IT")
-```
-
-Iterate over the countries with an iterator:
-
-```
-let countryIterator = kit.makeIterator()
-```
-
