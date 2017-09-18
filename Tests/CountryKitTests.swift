@@ -59,7 +59,6 @@ class CountryKitTests: XCTestCase {
   }
 
   func testMissingFlag() {
-    let iterator = sut.makeIterator()
 
     for country in sut.countries {
       XCTAssertNotNil(country.flagImage, "\(country) should have a flag image.")
@@ -84,17 +83,20 @@ class CountryKitTests: XCTestCase {
     XCTAssertTrue(country.iso == "IT")
     XCTAssertTrue(country.phoneCode == 39)
     XCTAssertTrue(country.countryCode == 380)
-
+    XCTAssertTrue(country.emoji == "🇮🇹")
+    
   }
 
   func testSearchByIsoCode() {
     let italy = sut.searchByIsoCode("IT")
     XCTAssertNotNil(italy)
     XCTAssertNotNil(italy?.flagImage)
+    XCTAssertTrue(italy?.emoji == "🇮🇹")
 
     let japan = sut.searchByIsoCode("jp")
     XCTAssertNotNil(japan)
     XCTAssertNotNil(japan?.flagImage)
+    XCTAssertTrue(japan?.emoji == "🇯🇵")
 
     let unknown1 = sut.searchByIsoCode("xYz")
     XCTAssertNil(unknown1)
