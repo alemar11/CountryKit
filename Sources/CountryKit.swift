@@ -54,7 +54,7 @@ final public class CountryKit {
   /// Initializer.
   public init() {
     guard
-      let jsonPath = bundle.path(forResource: "countries", ofType: "json"),
+      let jsonPath = bundle.path(forResource: "Countries.bundle/countries", ofType: "json"),
       let jsonData = try? Data(contentsOf: URL(fileURLWithPath: jsonPath)),
       let countries = try? JSONDecoder().decode([Country].self, from: jsonData)
       else {
