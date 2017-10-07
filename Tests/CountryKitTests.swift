@@ -61,9 +61,17 @@ class CountryKitTests: XCTestCase {
   func testMissingFlag() {
 
     for country in sut.countries {
+      print("\(country)\n")
       XCTAssertNotNil(country.flagImage, "\(country) should have a flag image.")
     }
 
+  }
+
+  func testDescription() {
+    // nothing to test here...
+    for country in sut.countries {
+      print("\(country)\n")
+    }
   }
 
   func testCurrentCountry() {
