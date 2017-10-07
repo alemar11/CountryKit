@@ -18,8 +18,8 @@ A μlibrary in Swift containing all the countries with their localized name, ISO
 
 - [Requirements](#requirements)
 - [Documentation](#documentation)
-- [Usage](#usage)
 - [Installation](#installation)
+- [Usage](#usage)
 - [License](#license)
 
 ## Requirements
@@ -33,33 +33,6 @@ A μlibrary in Swift containing all the countries with their localized name, ISO
 Documentation is [available online](http://www.tinrobots.org/CountryKit/).
 
 > [http://www.tinrobots.org/CountryKit/](http://www.tinrobots.org/CountryKit/)
-
-## Usage
-
-Instantiate CountryKit and obtain a list of all countries:
-
-```
-let countryKit = CountryKit()
-let countries = countryKit.countries
-```
-
-Get the system current country:
-```
-let country = countryKit.current
-```
-
-Search a country by its ISO code:
-
-```
-let italy = countryKit.searchByIsoCode("IT")
-```
-
-Iterate over the countries with an iterator:
-
-```
-let iterator = countryKit.makeIterator()
-```
-
 
 ## Installation
 
@@ -144,6 +117,25 @@ $ git submodule add https://github.com/tinrobots/CountryKit.git
 
     > You can verify which one you selected by inspecting the build log for your project. The build target for `CountryKit` will be listed as either `CountryKit iOS`, `CountryKit macOS`, `CountryKit tvOS` or `CountryKit watchOS`.
 
+## Usage
+
+Instantiate CountryKit and obtain a list of all countries:
+
+```swift
+import CountryKit
+
+let countryKit = CountryKit()
+let countries = countryKit.countries
+
+// the system current country
+let country = countryKit.current 
+
+// search a country by its ISO code:
+let italy = countryKit.searchByIsoCode("IT")
+
+// iterate over the countries with an iterator:
+let iterator = countryKit.makeIterator()
+```
 
 ## License
 
