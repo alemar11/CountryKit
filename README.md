@@ -119,8 +119,6 @@ $ git submodule add https://github.com/tinrobots/CountryKit.git
 
 ## Usage
 
-Instantiate CountryKit and obtain a list of all countries:
-
 ```swift
 import CountryKit
 
