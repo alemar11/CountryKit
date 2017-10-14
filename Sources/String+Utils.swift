@@ -55,8 +55,8 @@ extension String {
   /// - Note: to check if a string contains a flag use: `self.contains { $0.isFlag }`
   /// - Note: to extrapolate the flags in a string use: `self.filter { $0.isFlag }`
   var isEmojiFlag: Bool {
-    guard characters.count == 1 else { return false }
-    return characters.first!.isFlag
+    guard count == 1 else { return false }
+    return first!.isFlag
   }
 
 }

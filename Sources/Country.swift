@@ -69,8 +69,8 @@ open class Country: Codable {
   ///
   /// Returns the country flag.
   public lazy var flagImage: Image? = {
-    guard let bundle = bundle else { return nil }
     let image: Image?
+    
     #if os(iOS) || os(tvOS)
       image = Image(named: iso.lowercased(), in: bundle, compatibleWith: nil)
     #elseif os(macOS)
