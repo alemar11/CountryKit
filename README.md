@@ -123,6 +123,8 @@ $ git submodule add https://github.com/tinrobots/CountryKit.git
 import CountryKit
 
 let countryKit = CountryKit()
+
+// list of all countries
 let countries = countryKit.countries
 
 // the system current country
