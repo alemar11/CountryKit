@@ -44,6 +44,9 @@
                 <a href="Instance Variables.html#/s:10CountryKit0A0C11countryCodeSiSgv">countryCode</a>
               </li>
               <li class="nav-group-task">
+                <a href="Instance Variables.html#/s:10CountryKit0A0C11descriptionSSv">description</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Instance Variables.html#/s:10CountryKit0A0C5emojiSSv">emoji</a>
               </li>
               <li class="nav-group-task">
@@ -64,7 +67,7 @@
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="Typealiases.html">Typealiases</a>
+            <a href="Typealiases.html">Type Aliases</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a href="Typealiases.html#/s:10CountryKit5Imagea">Image</a>
@@ -112,8 +115,8 @@
 <ul>
 <li><a href="#requirements">Requirements</a></li>
 <li><a href="#documentation">Documentation</a></li>
-<li><a href="#usage">Usage</a></li>
 <li><a href="#installation">Installation</a></li>
+<li><a href="#usage">Usage</a></li>
 <li><a href="#license">License</a></li>
 </ul>
 <h2 id='requirements' class='heading'>Requirements</h2>
@@ -130,24 +133,6 @@
 <blockquote>
 <p><a href="http://www.tinrobots.org/CountryKit/">http://www.tinrobots.org/CountryKit/</a></p>
 </blockquote>
-<h2 id='usage' class='heading'>Usage</h2>
-
-<p>Instantiate CountryKit and obtain a list of all countries:</p>
-<pre class="highlight plaintext"><code>let countryKit = CountryKit()
-let countries = countryKit.countries
-</code></pre>
-
-<p>Get the system current country:</p>
-<pre class="highlight plaintext"><code>let country = countryKit.current
-</code></pre>
-
-<p>Search a country by its ISO code:</p>
-<pre class="highlight plaintext"><code>let italy = countryKit.searchByIsoCode("IT")
-</code></pre>
-
-<p>Iterate over the countries with an iterator:</p>
-<pre class="highlight plaintext"><code>let iterator = countryKit.makeIterator()
-</code></pre>
 <h2 id='installation' class='heading'>Installation</h2>
 <h3 id='cocoapods' class='heading'>CocoaPods</h3>
 
@@ -204,7 +189,7 @@ let countries = countryKit.countries
 </code></pre>
 
 <ul>
-<li><p>Open the new <code>CountryKit</code> folder, and drag the <code>CountryKit.xcodeproj</code> into the Project Navigator of your application&rsquo;s Xcode project.</p>
+<li><p>Open the new <code><a href="Classes/CountryKit.html">CountryKit</a></code> folder, and drag the <code>CountryKit.xcodeproj</code> into the Project Navigator of your application&rsquo;s Xcode project.</p>
 
 <blockquote>
 <p>It should appear nested underneath your application&rsquo;s blue project icon. Whether it is above or below all the other Xcode groups does not matter.</p>
@@ -221,9 +206,26 @@ let countries = countryKit.countries
 <li><p>Select the top <code>CountryKit.framework</code> for iOS and the bottom one for macOS.</p>
 
 <blockquote>
-<p>You can verify which one you selected by inspecting the build log for your project. The build target for <code>CountryKit</code> will be listed as either <code>CountryKit iOS</code>, <code>CountryKit macOS</code>, <code>CountryKit tvOS</code> or <code>CountryKit watchOS</code>.</p>
+<p>You can verify which one you selected by inspecting the build log for your project. The build target for <code><a href="Classes/CountryKit.html">CountryKit</a></code> will be listed as either <code>CountryKit iOS</code>, <code>CountryKit macOS</code>, <code>CountryKit tvOS</code> or <code>CountryKit watchOS</code>.</p>
 </blockquote></li>
 </ul>
+<h2 id='usage' class='heading'>Usage</h2>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">CountryKit</span>
+
+<span class="k">let</span> <span class="nv">countryKit</span> <span class="o">=</span> <span class="kt">CountryKit</span><span class="p">()</span>
+
+<span class="c1">// list of all countries</span>
+<span class="k">let</span> <span class="nv">countries</span> <span class="o">=</span> <span class="n">countryKit</span><span class="o">.</span><span class="n">countries</span>
+
+<span class="c1">// the system current country</span>
+<span class="k">let</span> <span class="nv">country</span> <span class="o">=</span> <span class="n">countryKit</span><span class="o">.</span><span class="n">current</span> 
+
+<span class="c1">// search a country by its ISO code:</span>
+<span class="k">let</span> <span class="nv">italy</span> <span class="o">=</span> <span class="n">countryKit</span><span class="o">.</span><span class="nf">searchByIsoCode</span><span class="p">(</span><span class="s">"IT"</span><span class="p">)</span>
+
+<span class="c1">// iterate over the countries with an iterator:</span>
+<span class="k">let</span> <span class="nv">iterator</span> <span class="o">=</span> <span class="n">countryKit</span><span class="o">.</span><span class="nf">makeIterator</span><span class="p">()</span>
+</code></pre>
 <h2 id='license' class='heading'>License</h2>
 
 <p><a href="https://github.com/alemar11/Console/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-MIT-lightgrey.svg?style=flat" alt="License MIT"></a></p>
@@ -233,8 +235,8 @@ let countries = countryKit.countries
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2017 <a class="link" href="https://github.com/tinrobots/CountryKit" target="_blank" rel="external">Alessandro Marzoli</a>. All rights reserved. (Last updated: 2017-09-18)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2017 <a class="link" href="https://github.com/tinrobots/CountryKit" target="_blank" rel="external">Alessandro Marzoli</a>. All rights reserved. (Last updated: 2017-11-02)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

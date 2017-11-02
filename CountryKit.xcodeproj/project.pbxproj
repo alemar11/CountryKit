@@ -107,6 +107,7 @@
 		23AE997E1F6A85F300B0CC6E /* Flags.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Flags.xcassets; path = Sources/Flags.xcassets; sourceTree = SOURCE_ROOT; };
 		23AE99801F6A85F300B0CC6E /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Country.swift; path = Sources/Country.swift; sourceTree = SOURCE_ROOT; };
 		23AE99811F6A85F400B0CC6E /* CountryKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CountryKit.swift; path = Sources/CountryKit.swift; sourceTree = SOURCE_ROOT; };
+		23FDBAF71FAB2FB7008E841E /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +205,7 @@
 		23AE997A1F6A84D900B0CC6E /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				23FDBAF71FAB2FB7008E841E /* Package.swift */,
 				23AE99621F6A849F00B0CC6E /* CountryKit.h */,
 				23754A7B1F6AC743007B4E6D /* IDETemplateMacros.plist */,
 				23AE996F1F6A849F00B0CC6E /* Info-Tests.plist */,
@@ -448,12 +450,12 @@
 			projectRoot = "";
 			targets = (
 				23AE995E1F6A849F00B0CC6E /* CountryKit iOS */,
-				23AE99671F6A849F00B0CC6E /* CountryKit iOS Tests */,
-				230724651F6A982700EA7150 /* CountryKit macOS */,
-				2307246D1F6A982800EA7150 /* CountryKit macOS Tests */,
 				2333D1261F6AB9020037C615 /* CountryKit tvOS */,
-				2333D12E1F6AB9020037C615 /* CountryKit tvOS Tests */,
 				23754A6C1F6ABD18007B4E6D /* CountryKit watchOS */,
+				230724651F6A982700EA7150 /* CountryKit macOS */,
+				23AE99671F6A849F00B0CC6E /* CountryKit iOS Tests */,
+				2333D12E1F6AB9020037C615 /* CountryKit tvOS Tests */,
+				2307246D1F6A982800EA7150 /* CountryKit macOS Tests */,
 				2363FECA1F6E6C810067257A /* Cleanup Whitespace */,
 				2363FECF1F6E6D020067257A /* SwiftLint */,
 			);

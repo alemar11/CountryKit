@@ -35,7 +35,7 @@ internal let frameworkName = "CountryKit"
 /// **CountryKit**
 ///
 /// CountryKit Bundle.
-internal let bundle = Bundle(identifier: "org.tinrobots.\(frameworkName)") ?? Bundle(identifier: "org.cocoapods.\(frameworkName)")
+internal let bundle = Bundle(for: CountryKit.self)
 
 /// **CountryKit**
 final public class CountryKit {
@@ -54,7 +54,6 @@ final public class CountryKit {
   /// Initializer.
   public init() {
     guard
-      let bundle = bundle,
       let jsonPath = bundle.path(forResource: "Countries.bundle/countries", ofType: "json"),
       let jsonData = try? Data(contentsOf: URL(fileURLWithPath: jsonPath)),
       let countries = try? JSONDecoder().decode([Country].self, from: jsonData)
