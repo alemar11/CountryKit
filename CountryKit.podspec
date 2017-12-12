@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.watchos.deployment_target = '3.0'
 
   s.source_files =  'Sources/*.swift', 
-                    'Sources/*.{h,m}'
+                    'Support/*.{h,m}'
   
   s.resources = 'Sources/Flags.xcassets', 
                 'Sources/Countries.bundle'
