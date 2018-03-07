@@ -139,6 +139,6 @@ let iterator = countryKit.makeIterator()
 
 ## License
 
-[![License MIT](https://img.shields.io/badge/License-MIT-lightgrey.svg?style=flat)](https://github.com/alemar11/Console/blob/master/LICENSE)
+[![License MIT](https://img.shields.io/badge/License-MIT-lightgrey.svg?style=flat)](https://github.com/tinrobots/CountryKit/blob/master/LICENSE.md))
 
 CountryKit is released under the MIT license. See [LICENSE](./LICENSE.md) for details.
