@@ -70,7 +70,7 @@ open class Country: Codable {
   /// Returns the country flag.
   public lazy var flagImage: Image? = {
     let image: Image?
-    
+
     #if os(iOS) || os(tvOS)
       image = Image(named: iso.lowercased(), in: bundle, compatibleWith: nil)
     #elseif os(macOS)
@@ -138,7 +138,7 @@ extension Country: CustomStringConvertible {
     \tLocalized name: \(localizedName)
     \tISO code: \(iso)
     """
-    
+
     if let phoneCode = phoneCode {
       description += "\n\tPhone code: \(phoneCode)"
     }
@@ -151,4 +151,3 @@ extension Country: CustomStringConvertible {
   }
 
 }
-
