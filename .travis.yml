@@ -1,5 +1,5 @@
 language: objective-c
-osx_image: xcode9.2
+osx_image: xcode9.3beta
 env:
   global:
   - LC_CTYPE=en_US.UTF-8
@@ -8,10 +8,10 @@ env:
   - MACOS_FRAMEWORK_SCHEME="CountryKit macOS"
   - TVOS_FRAMEWORK_SCHEME="CountryKit tvOS"
   - WATCHOS_FRAMEWORK_SCHEME="CountryKit watchOS"
-  - IOS_SDK=iphonesimulator11.2
+  - IOS_SDK=iphonesimulator11.3
   - MACOS_SDK=macosx10.13
-  - TVOS_SDK=appletvsimulator11.2
-  - WATCHOS_SDK=watchsimulator4.2
+  - TVOS_SDK=appletvsimulator11.3
+  - WATCHOS_SDK=watchsimulator4.3
   #- WORKSPACE=CountryKit.xcworkspace
   #- EXAMPLE_SCHEME="CountryKit Example"
   
@@ -22,9 +22,9 @@ env:
     - DESTINATION="OS=10.2,name=Apple TV 1080p"         SCHEME="$TVOS_FRAMEWORK_SCHEME"    SDK="$TVOS_SDK"    RUN_TESTS="YES"   POD_LINT="NO"   CODECOV_FLAG="tvos10"
     - DESTINATION="arch=x86_64"                         SCHEME="$MACOS_FRAMEWORK_SCHEME"   SDK="$MACOS_SDK"   RUN_TESTS="YES"   POD_LINT="NO"   CODECOV_FLAG="macos10_12"
 
-    - DESTINATION="OS=11.2,name=iPhone X"               SCHEME="$IOS_FRAMEWORK_SCHEME"      SDK="$IOS_SDK"      RUN_TESTS="YES"   POD_LINT="YES"   CODECOV_FLAG="ios"
-    - DESTINATION="OS=4.2,name=Apple Watch - 42mm"      SCHEME="$WATCHOS_FRAMEWORK_SCHEME"  SDK="$WATCHOS_SDK"  RUN_TESTS="NO"    POD_LINT="NO"    CODECOV_FLAG="watchos"
-    - DESTINATION="OS=11.2,name=Apple TV 4K (at 1080p)" SCHEME="$TVOS_FRAMEWORK_SCHEME"     SDK="$TVOS_SDK"     RUN_TESTS="YES"   POD_LINT="NO"    CODECOV_FLAG="tvos"
+    - DESTINATION="OS=11.3,name=iPhone X"               SCHEME="$IOS_FRAMEWORK_SCHEME"      SDK="$IOS_SDK"      RUN_TESTS="YES"   POD_LINT="YES"   CODECOV_FLAG="ios"
+    - DESTINATION="OS=4.3,name=Apple Watch - 42mm"      SCHEME="$WATCHOS_FRAMEWORK_SCHEME"  SDK="$WATCHOS_SDK"  RUN_TESTS="NO"    POD_LINT="NO"    CODECOV_FLAG="watchos"
+    - DESTINATION="OS=11.3,name=Apple TV 4K (at 1080p)" SCHEME="$TVOS_FRAMEWORK_SCHEME"     SDK="$TVOS_SDK"     RUN_TESTS="YES"   POD_LINT="NO"    CODECOV_FLAG="tvos"
     - DESTINATION="arch=x86_64"                         SCHEME="$MACOS_FRAMEWORK_SCHEME"    SDK="$MACOS_SDK"    RUN_TESTS="YES"   POD_LINT="NO"    CODECOV_FLAG="macos"
 
 # skip release group defined in Gemfile
