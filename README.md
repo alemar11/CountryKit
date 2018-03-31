@@ -21,6 +21,7 @@ A μlibrary in Swift containing all the countries with their localized name, ISO
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
+- [Contributing](#contributing)
 
 ## Requirements
 
@@ -142,3 +143,8 @@ let iterator = countryKit.makeIterator()
 [![License MIT](https://img.shields.io/badge/License-MIT-lightgrey.svg?style=flat)](https://github.com/tinrobots/CountryKit/blob/master/LICENSE.md))
 
 CountryKit is released under the MIT license. See [LICENSE](./LICENSE.md) for details.
+
+## Contributing
+
+Pull requests are welcome!  
+[Show your ❤ with a ★](https://github.com/tinrobots/mechanica/stargazers)
