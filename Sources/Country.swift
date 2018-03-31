@@ -97,7 +97,7 @@ open class Country: Codable {
   /// Returns the country's flag emoji.
   public var emoji: String {
     let country = iso.uppercased()
-    let emoji = country.unicodeScalars.flatMap { UnicodeScalar(127397 + $0.value) }.map { String($0) }.joined()
+    let emoji = country.unicodeScalars.compactMap { UnicodeScalar(127397 + $0.value) }.map { String($0) }.joined()
 
     //    for unicodeScalar in country.unicodeScalars {
     //      let scalar = UnicodeScalar(127397 + unicodeScalar.value)!
