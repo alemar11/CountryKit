@@ -84,6 +84,7 @@ extension CountryKit {
     }
 
     guard let code = countryCode else { return nil }
+
     let country = searchByIsoCode(code)
 
     return country
