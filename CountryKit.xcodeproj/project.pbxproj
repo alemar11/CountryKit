@@ -33,6 +33,10 @@
 
 /* Begin PBXBuildFile section */
 		2307246F1F6A982800EA7150 /* CountryKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 230724661F6A982700EA7150 /* CountryKit.framework */; };
+		231CC8AE20F60AFE008828E4 /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231CC8AD20F60AFE008828E4 /* Countries.swift */; };
+		231CC8AF20F60AFE008828E4 /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231CC8AD20F60AFE008828E4 /* Countries.swift */; };
+		231CC8B020F60AFE008828E4 /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231CC8AD20F60AFE008828E4 /* Countries.swift */; };
+		231CC8B120F60AFE008828E4 /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231CC8AD20F60AFE008828E4 /* Countries.swift */; };
 		2333D1301F6AB9020037C615 /* CountryKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2333D1271F6AB9020037C615 /* CountryKit.framework */; };
 		2333D13F1F6AB9110037C615 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AE99801F6A85F300B0CC6E /* Country.swift */; };
 		2333D1401F6AB9110037C615 /* CountryKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AE99811F6A85F400B0CC6E /* CountryKit.swift */; };
@@ -48,10 +52,6 @@
 		239D8B0D1F6B1C7D00E603C9 /* String+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239D8B0B1F6B1C7D00E603C9 /* String+Utils.swift */; };
 		239D8B0E1F6B1C7D00E603C9 /* String+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239D8B0B1F6B1C7D00E603C9 /* String+Utils.swift */; };
 		239D8B0F1F6B1C7D00E603C9 /* String+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239D8B0B1F6B1C7D00E603C9 /* String+Utils.swift */; };
-		23AD93431F70288800FF636D /* Countries.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 23AD93421F7023AC00FF636D /* Countries.bundle */; };
-		23AD93441F70288900FF636D /* Countries.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 23AD93421F7023AC00FF636D /* Countries.bundle */; };
-		23AD93451F70288A00FF636D /* Countries.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 23AD93421F7023AC00FF636D /* Countries.bundle */; };
-		23AD93461F70288B00FF636D /* Countries.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 23AD93421F7023AC00FF636D /* Countries.bundle */; };
 		23AE99691F6A849F00B0CC6E /* CountryKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23AE995F1F6A849F00B0CC6E /* CountryKit.framework */; };
 		23AE99701F6A849F00B0CC6E /* CountryKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 23AE99621F6A849F00B0CC6E /* CountryKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		23AE997D1F6A85E700B0CC6E /* CountryKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AE997C1F6A85E300B0CC6E /* CountryKitTests.swift */; };
@@ -91,13 +91,13 @@
 /* Begin PBXFileReference section */
 		230724661F6A982700EA7150 /* CountryKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CountryKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2307246E1F6A982800EA7150 /* CountryKit macOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CountryKit macOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		231CC8AD20F60AFE008828E4 /* Countries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
 		2333D1271F6AB9020037C615 /* CountryKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CountryKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2333D12F1F6AB9020037C615 /* CountryKit tvOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CountryKit tvOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2333D1421F6AB9890037C615 /* Info-tvOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
 		23754A6D1F6ABD18007B4E6D /* CountryKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CountryKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		23754A7B1F6AC743007B4E6D /* IDETemplateMacros.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = IDETemplateMacros.plist; path = CountryKit.xcodeproj/xcshareddata/IDETemplateMacros.plist; sourceTree = SOURCE_ROOT; };
 		239D8B0B1F6B1C7D00E603C9 /* String+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Utils.swift"; sourceTree = "<group>"; };
-		23AD93421F7023AC00FF636D /* Countries.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Countries.bundle; sourceTree = "<group>"; };
 		23AE995F1F6A849F00B0CC6E /* CountryKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CountryKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		23AE99621F6A849F00B0CC6E /* CountryKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountryKit.h; sourceTree = "<group>"; };
 		23AE99631F6A849F00B0CC6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -193,7 +193,7 @@
 		23AE99791F6A84CF00B0CC6E /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				23AD93421F7023AC00FF636D /* Countries.bundle */,
+				231CC8AD20F60AFE008828E4 /* Countries.swift */,
 				23AE99801F6A85F300B0CC6E /* Country.swift */,
 				23AE99811F6A85F400B0CC6E /* CountryKit.swift */,
 				23AE997E1F6A85F300B0CC6E /* Flags.xcassets */,
@@ -467,7 +467,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23AD93441F70288900FF636D /* Countries.bundle in Resources */,
 				23BAB14A1F6AADDD002DEC82 /* Flags.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -483,7 +482,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23AD93451F70288A00FF636D /* Countries.bundle in Resources */,
 				2333D1411F6AB9110037C615 /* Flags.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -499,7 +497,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23AD93461F70288B00FF636D /* Countries.bundle in Resources */,
 				23754A781F6ABD68007B4E6D /* Flags.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -508,7 +505,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23AD93431F70288800FF636D /* Countries.bundle in Resources */,
 				23AE99851F6A867900B0CC6E /* Flags.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -560,6 +556,7 @@
 			files = (
 				23BAB1481F6AADDD002DEC82 /* Country.swift in Sources */,
 				23BAB1491F6AADDD002DEC82 /* CountryKit.swift in Sources */,
+				231CC8B120F60AFE008828E4 /* Countries.swift in Sources */,
 				239D8B0D1F6B1C7D00E603C9 /* String+Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -578,6 +575,7 @@
 			files = (
 				2333D13F1F6AB9110037C615 /* Country.swift in Sources */,
 				2333D1401F6AB9110037C615 /* CountryKit.swift in Sources */,
+				231CC8AF20F60AFE008828E4 /* Countries.swift in Sources */,
 				239D8B0E1F6B1C7D00E603C9 /* String+Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -596,6 +594,7 @@
 			files = (
 				23754A761F6ABD68007B4E6D /* Country.swift in Sources */,
 				23754A771F6ABD68007B4E6D /* CountryKit.swift in Sources */,
+				231CC8B020F60AFE008828E4 /* Countries.swift in Sources */,
 				239D8B0F1F6B1C7D00E603C9 /* String+Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -606,6 +605,7 @@
 			files = (
 				23AE99821F6A85F400B0CC6E /* Country.swift in Sources */,
 				23AE99831F6A85F400B0CC6E /* CountryKit.swift in Sources */,
+				231CC8AE20F60AFE008828E4 /* Countries.swift in Sources */,
 				239D8B0C1F6B1C7D00E603C9 /* String+Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
