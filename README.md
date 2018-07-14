@@ -55,7 +55,7 @@ platform :ios, '10.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'CountryKit', '~> 1.2'
+    pod 'CountryKit', '~> 1.3'
 end
 ```
 
@@ -79,7 +79,7 @@ $ brew install carthage
 To integrate CountryKit into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "tinrobots/CountryKit" ~> 1.2.0
+github "tinrobots/CountryKit" ~> 1.3.0
 ```
 
 Run `carthage update` to build the framework and drag the built `CountryKit.framework` into your Xcode project.
