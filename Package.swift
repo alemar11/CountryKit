@@ -10,11 +10,7 @@ let package = Package(
   ],
   targets: [
     .target(name: "CountryKit", path: "Sources"),
-//    .testTarget(
-//      name: "Tests",
-//      dependencies: ["CountryKit"],
-//      path: "Tests"
-//    )
+    //.testTarget(name: "Tests", dependencies: ["CountryKit"], path: "Tests")
   ],
   swiftLanguageVersions: [.v4_2]
 )
