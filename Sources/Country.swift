@@ -74,8 +74,7 @@ open class Country: Codable {
     #if os(iOS) || os(tvOS)
       image = Image(named: iso.lowercased(), in: bundle, compatibleWith: nil)
     #elseif os(macOS)
-      let name = NSImage.Name(rawValue: iso.lowercased())
-      image = bundle.image(forResource: name)
+      image = bundle.image(forResource: iso.lowercased())
     #endif
     return image
   }()
