@@ -6,7 +6,7 @@ env:
     - MACOS_FRAMEWORK_SCHEME="CountryKit macOS"
     - TVOS_FRAMEWORK_SCHEME="CountryKit tvOS"
     - WATCHOS_FRAMEWORK_SCHEME="CountryKit watchOS"
-   - IOS_SDK=iphonesimulator12.1
+    - IOS_SDK=iphonesimulator12.1
     - MACOS_SDK=macosx10.14
     - TVOS_SDK=appletvsimulator12.1
     - WATCHOS_SDK=watchsimulator5.1
