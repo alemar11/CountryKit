@@ -4,4 +4,9 @@ author_url: http://www.tinrobots.org
 github_url: https://github.com/tinrobots/countrykit
 copyright: "© 2016-2018 [Tin Robots](http://www.tinrobots.org)"
 clean: true
-podspec: CountryKit.podspec
+# podspec: CountryKit.podspec
+# xcodebuild_arguments:
+#     - "-project"
+#     - "CountryKit.xcodeproj"
+#     - "-scheme"
+#     - "CountryKit iOS"
