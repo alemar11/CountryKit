@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name    = 'CountryKit'
-  s.version = '1.3.0'
+  s.version = '1.4.0'
   s.license = 'MIT'
   s.documentation_url = 'http://www.tinrobots.org/CountryKit'  
   s.summary   = 'A μlibrary in Swift containing all the countries with their localized name, ISO code, phone code, country code, flag image and emoji.'
