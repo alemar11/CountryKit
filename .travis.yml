@@ -28,7 +28,7 @@ matrix:
         - set -o pipefail  
         - swift --version
         #- swift test -Xswiftc -target -Xswiftc x86_64-apple-macosx10.12
-        - pod lib lint   
+        - pod lib lint --verbose
 
     # iOS 10.3.1 (32bit)
     - os: osx
