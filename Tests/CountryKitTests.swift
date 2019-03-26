@@ -85,7 +85,6 @@ class CountryKitTests: XCTestCase {
     XCTAssertTrue(country.phoneCode == 39)
     XCTAssertTrue(country.countryCode == 380)
     XCTAssertTrue(country.emoji == "🇮🇹")
-
   }
 
   func testSearchByIsoCode() {
