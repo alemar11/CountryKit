@@ -1,24 +1,11 @@
-// swift-tools-version:4.0
-// The swift-tools-version declares the minimum version of Swift required to build this package.
+// swift-tools-version:5.0
 
 import PackageDescription
 
-let package = Package(
-  name: "CountryKit",
-  products: [
-    .library(
-      name: "CountryKit",
-      targets: ["CountryKit"])
-  ],
-  targets: [
-    .target(
-      name: "CountryKit",
-      path: "Sources"
-    ),
-//    .testTarget(
-//      name: "Tests",
-//      dependencies: ["CountryKit"],
-//      path: "Tests"
-//    )
-  ]
-)
+let package = Package(name: "CountryKit")
+package.swiftLanguageVersions = [.v5]
+package.products = [.library(name: "CountryKit", targets: ["CountryKit"])]
+
+package.targets = [
+  .target(name: "CountryKit", path: "Sources"),
+]

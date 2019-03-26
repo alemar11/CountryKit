@@ -74,7 +74,7 @@ open class Country: Codable {
     #if os(iOS) || os(tvOS)
       image = Image(named: iso.lowercased(), in: bundle, compatibleWith: nil)
     #elseif os(macOS)
-      let name = NSImage.Name(rawValue: iso.lowercased())
+      let name = iso.lowercased()
       image = bundle.image(forResource: name)
     #endif
     return image
@@ -97,13 +97,7 @@ open class Country: Codable {
   /// Returns the country's flag emoji.
   public var emoji: String {
     let country = iso.uppercased()
-    let emoji = country.unicodeScalars.flatMap { UnicodeScalar(127397 + $0.value) }.map { String($0) }.joined()
-
-    //    for unicodeScalar in country.unicodeScalars {
-    //      let scalar = UnicodeScalar(127397 + unicodeScalar.value)!
-    //      emoji.append(String(scalar))
-    //    }
-
+    let emoji = country.unicodeScalars.compactMap { UnicodeScalar(127397 + $0.value) }.map { String($0) }.joined()
     return emoji
   }
 
@@ -128,7 +122,6 @@ open class Country: Codable {
 }
 
 extension Country: CustomStringConvertible {
-
   /// **CountryKit**
   ///
   /// A textual representation of a `Country` instance.
@@ -149,6 +142,5 @@ extension Country: CustomStringConvertible {
 
     return description
   }
-
 }
 

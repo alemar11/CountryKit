@@ -78,7 +78,6 @@ final public class CountryKit {
 // MARK: - Utils
 
 extension CountryKit {
-
   /// **CountryKit**
   ///
   /// Returns the current user's country.
@@ -104,13 +103,11 @@ extension CountryKit {
       return nil
     #endif
   }
-
 }
 
 // MARK: - Sequence
 
 extension CountryKit: Sequence {
-
   /// **CountryKit**
   ///
   /// Returns an iterator over the list of countries.
@@ -127,5 +124,4 @@ extension CountryKit: Sequence {
     }
 
   }
-
 }
