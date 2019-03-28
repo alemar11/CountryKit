@@ -39,7 +39,6 @@ internal let bundle = Bundle(for: CountryKit.self)
 
 /// **CountryKit**
 final public class CountryKit {
-
   // MARK: - Properties
 
   /// **CountryKit**
@@ -72,7 +71,6 @@ final public class CountryKit {
 
     return countries.first
   }
-
 }
 
 // MARK: - Utils
@@ -91,6 +89,7 @@ extension CountryKit {
     }
 
     guard let code = countryCode else { return nil }
+
     let country = searchByIsoCode(code)
 
     return country
@@ -122,6 +121,5 @@ extension CountryKit: Sequence {
 
       return country
     }
-
   }
 }

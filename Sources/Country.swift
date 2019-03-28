@@ -40,7 +40,6 @@ import Foundation
 /// **CountryKit**
 ///
 open class Country: Codable {
-
   // MARK: - Properties
 
   /// **CountryKit**
@@ -104,10 +103,10 @@ open class Country: Codable {
   // MARK: - Initializers
 
   public init(name: String, iso: String, phoneCode: Int?, countryCode: Int?) {
-    self.name         = name
-    self.iso          = iso
-    self.phoneCode    = phoneCode
-    self.countryCode  = countryCode
+    self.name = name
+    self.iso = iso
+    self.phoneCode = phoneCode
+    self.countryCode = countryCode
   }
 
   // MARK: - Private
@@ -118,7 +117,6 @@ open class Country: Codable {
     case phoneCode
     case countryCode
   }
-
 }
 
 extension Country: CustomStringConvertible {
