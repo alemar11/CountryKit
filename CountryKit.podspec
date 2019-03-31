@@ -8,7 +8,8 @@ Pod::Spec.new do |s|
   s.authors   = { 'Alessandro Marzoli' => 'me@alessandromarzoli.com' }
   s.source    = { :git => 'https://github.com/tinrobots/CountryKit.git', :tag => s.version }
   s.requires_arc = true
-  
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.2'}
+
   s.ios.deployment_target     = '10.0'
   s.osx.deployment_target     = '10.12'
   s.tvos.deployment_target    = '10.0'
