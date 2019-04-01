@@ -1,6 +1,6 @@
 # CountryKit
 
-[![Swift 4.2](https://img.shields.io/badge/Swift-4.1-orange.svg?style=flat)](https://developer.apple.com/swift)
+[![Swift 5.0](https://img.shields.io/badge/Swift-4.1-orange.svg?style=flat)](https://developer.apple.com/swift)
 ![Platforms](https://img.shields.io/badge/Platform-iOS%2010%2B%20|%20macOS%2010.12+%20|%20tvOS%2010+%20|%20watchOS%203+-blue.svg) 
 
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
@@ -26,8 +26,8 @@ A μlibrary in Swift containing all the countries with their localized name, ISO
 ## Requirements
 
 - iOS 10.0+ / macOS 10.12+ / tvOS 10.0+ / watchOS 3.0+
-- Xcode 10.1
-- Swift 4.2.1
+- Xcode 10.2
+- Swift 5.0
 
 ## Documentation
 
@@ -55,7 +55,7 @@ platform :ios, '10.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'CountryKit', '~> 1.4'
+    pod 'CountryKit', '~> 2.0.0'
 end
 ```
 
@@ -79,7 +79,7 @@ $ brew install carthage
 To integrate CountryKit into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "tinrobots/CountryKit" ~> 1.4.0
+github "tinrobots/CountryKit" ~> 2.0.0
 ```
 
 Run `carthage update` to build the framework and drag the built `CountryKit.framework` into your Xcode project.

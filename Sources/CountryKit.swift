@@ -58,7 +58,7 @@ final public class CountryKit {
 
   /// **CountryKit**
   ///
-  /// Returns a country (is any) that matches a given `ìsoCode`.
+  /// Returns a country (if any) that matches a given `ìsoCode`.
   public func searchByIsoCode(_ isoCode: String) -> Country? {
     let countries = self.countries.filter { $0.iso.lowercased() == isoCode.lowercased() }
 
