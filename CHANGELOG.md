@@ -1,5 +1,9 @@
 # Changelog
 
+### 2.0.0 ⭐
+
+- CountryKit is now completely migrated to **Swift 5**. 🎉
+
 ### 1.4.0
 
 - Swift 4.2 and Xcode 10 support.
