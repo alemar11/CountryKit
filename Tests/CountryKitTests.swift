@@ -30,12 +30,10 @@ final class CountryKitTests: XCTestCase {
 
   // tests if all iOS regions code are mapped in CountryKit.
   func testRegionCodes() {
-
     for regionCode in  Locale.isoRegionCodes {
       let match = sut.countries.filter { $0.iso == regionCode }
       XCTAssertTrue(match.count == 1, "\(regionCode) hasn't a match in the CountryKit library.")
     }
-
   }
 
   // tests if all CountryKit's countries are mapped in iOS regions code.
@@ -46,7 +44,6 @@ final class CountryKitTests: XCTestCase {
       let match = regionCodes.filter { $0 == country.iso }
       XCTAssertTrue(match.count == 1, "\(country) is not available.")
     }
-
   }
 
   func testSequence() {
@@ -55,16 +52,13 @@ final class CountryKitTests: XCTestCase {
     var count = 0
     while iterator.next() != nil { count += 1 }
     XCTAssert(sut.countries.count == count)
-
   }
 
   func testMissingFlag() {
-
     for country in sut.countries {
       print("\(country)\n")
       XCTAssertNotNil(country.flagImage, "\(country) should have a flag image.")
     }
-
   }
 
   func testDescription() {
@@ -75,7 +69,10 @@ final class CountryKitTests: XCTestCase {
   }
 
   func testCurrentCountry() {
-    XCTAssertNotNil(sut.current)
+    // In schemas settings for tests, the Application Region is set to Italy
+    let currentCountry = sut.current
+    XCTAssertNotNil(currentCountry)
+    XCTAssertTrue(currentCountry?.name == "Italy")
   }
 
   func testLocalizedName() {
@@ -92,7 +89,6 @@ final class CountryKitTests: XCTestCase {
     XCTAssertTrue(country.phoneCode == 39)
     XCTAssertTrue(country.countryCode == 380)
     XCTAssertTrue(country.emoji == "🇮🇹")
-
   }
 
   func testSearchByIsoCode() {
