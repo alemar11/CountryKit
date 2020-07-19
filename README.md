@@ -6,11 +6,6 @@
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/CountryKit.svg)](https://cocoapods.org/pods/CountryKit)
 
-|Branch|Build Status|Code Coverage|
-|----|----|----|
-|Master|[![Build Status](https://travis-ci.org/alemar11/CountryKit.svg?branch=master)](https://travis-ci.org/alemar11/CountryKit)| ![Code Coverage](https://img.shields.io/codecov/c/github/alemar11/CountryKit/master.svg)|
-|Develop|![Build Status](https://travis-ci.org/alemar11/CountryKit.svg?branch=develop)|![Code Coverage](https://img.shields.io/codecov/c/github/alemar11/CountryKit/develop.svg)|
-
 ## CountryKit
 [![GitHub release](https://img.shields.io/github/release/alemar11/CountryKit.svg)](https://github.com/alemar11/CountryKit/releases) 
 
