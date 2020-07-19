@@ -109,6 +109,8 @@
 		23AE99811F6A85F400B0CC6E /* CountryKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CountryKit.swift; path = Sources/CountryKit.swift; sourceTree = SOURCE_ROOT; };
 		23F87EED20FA4E58001D2AFF /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = SOURCE_ROOT; };
 		23FDBAF71FAB2FB7008E841E /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = SOURCE_ROOT; };
+		D266515D24C4BA020058AFC4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		D266515E24C4BA1C0058AFC4 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +208,8 @@
 		23AE997A1F6A84D900B0CC6E /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				D266515E24C4BA1C0058AFC4 /* LICENSE.md */,
+				D266515D24C4BA020058AFC4 /* README.md */,
 				23F87EED20FA4E58001D2AFF /* CHANGELOG.md */,
 				23FDBAF71FAB2FB7008E841E /* Package.swift */,
 				23AE99621F6A849F00B0CC6E /* CountryKit.h */,
@@ -664,7 +668,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = org.tinrobots.CountryKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alessandromarzoli.CountryKit;
 				PRODUCT_NAME = CountryKit;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
@@ -690,7 +694,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = org.tinrobots.CountryKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alessandromarzoli.CountryKit;
 				PRODUCT_NAME = CountryKit;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
@@ -710,7 +714,7 @@
 				INFOPLIST_FILE = "Support/Info-Tests.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.tinrobots.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alessandromarzoli.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -729,7 +733,7 @@
 				INFOPLIST_FILE = "Support/Info-Tests.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.tinrobots.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alessandromarzoli.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -750,7 +754,7 @@
 				INFOPLIST_FILE = "Support/Info-tvOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.tinrobots.CountryKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alessandromarzoli.CountryKit;
 				PRODUCT_NAME = CountryKit;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
@@ -773,7 +777,7 @@
 				INFOPLIST_FILE = "Support/Info-tvOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.tinrobots.CountryKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alessandromarzoli.CountryKit;
 				PRODUCT_NAME = CountryKit;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
@@ -790,7 +794,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Support/Info-Tests.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.tinrobots.CoountryKit-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alessandromarzoli.CountryKit-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SWIFT_VERSION = 5.0;
@@ -806,7 +810,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Support/Info-Tests.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.tinrobots.CoountryKit-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alessandromarzoli.CountryKit-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SWIFT_VERSION = 5.0;
@@ -860,7 +864,7 @@
 				INFOPLIST_FILE = Support/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.tinrobots.CountryKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alessandromarzoli.CountryKit;
 				PRODUCT_NAME = CountryKit;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -883,7 +887,7 @@
 				INFOPLIST_FILE = Support/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.tinrobots.CountryKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alessandromarzoli.CountryKit;
 				PRODUCT_NAME = CountryKit;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1030,7 +1034,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.tinrobots.CountryKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alessandromarzoli.CountryKit;
 				PRODUCT_NAME = CountryKit;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1055,7 +1059,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.tinrobots.CountryKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alessandromarzoli.CountryKit;
 				PRODUCT_NAME = CountryKit;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -1073,7 +1077,7 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Support/Info-Tests.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.tinrobots.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alessandromarzoli.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1092,7 +1096,7 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Support/Info-Tests.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.tinrobots.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alessandromarzoli.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

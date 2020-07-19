@@ -8,11 +8,11 @@
 
 |Branch|Build Status|Code Coverage|
 |----|----|----|
-|Master|[![Build Status](https://travis-ci.org/tinrobots/CountryKit.svg?branch=master)](https://travis-ci.org/tinrobots/CountryKit)| ![Code Coverage](https://img.shields.io/codecov/c/github/tinrobots/CountryKit/master.svg)|
-|Develop|![Build Status](https://travis-ci.org/tinrobots/CountryKit.svg?branch=develop)|![Code Coverage](https://img.shields.io/codecov/c/github/tinrobots/CountryKit/develop.svg)|
+|Master|[![Build Status](https://travis-ci.org/alemar11/CountryKit.svg?branch=master)](https://travis-ci.org/alemar11/CountryKit)| ![Code Coverage](https://img.shields.io/codecov/c/github/alemar11/CountryKit/master.svg)|
+|Develop|![Build Status](https://travis-ci.org/alemar11/CountryKit.svg?branch=develop)|![Code Coverage](https://img.shields.io/codecov/c/github/alemar11/CountryKit/develop.svg)|
 
 ## CountryKit
-[![GitHub release](https://img.shields.io/github/release/tinrobots/CountryKit.svg)](https://github.com/tinrobots/CountryKit/releases) 
+[![GitHub release](https://img.shields.io/github/release/alemar11/CountryKit.svg)](https://github.com/alemar11/CountryKit/releases) 
 
 A μlibrary in Swift containing all the countries with their localized name, ISO code, phone code, country code, flag image and emoji.
 
@@ -31,9 +31,9 @@ A μlibrary in Swift containing all the countries with their localized name, ISO
 
 ## Documentation
 
-Documentation is [available online](http://www.tinrobots.org/CountryKit/).
+Documentation is [available online](http://www.alemar11.org/CountryKit/).
 
-> [http://www.tinrobots.org/CountryKit/](http://www.tinrobots.org/CountryKit/)
+> [http://www.alemar11.org/CountryKit/](http://www.alemar11.org/CountryKit/)
 
 ## Installation
 
@@ -79,7 +79,7 @@ $ brew install carthage
 To integrate CountryKit into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "tinrobots/CountryKit" ~> 2.0.0
+github "alemar11/CountryKit" ~> 2.0.0
 ```
 
 Run `carthage update` to build the framework and drag the built `CountryKit.framework` into your Xcode project.
@@ -99,7 +99,7 @@ $ git init
 - Add CountryKit as a git [submodule](http://git-scm.com/docs/git-submodule) by running the following command:
 
 ```bash
-$ git submodule add https://github.com/tinrobots/CountryKit.git
+$ git submodule add https://github.com/alemar11/CountryKit.git
 ```
 
 - Open the new `CountryKit` folder, and drag the `CountryKit.xcodeproj` into the Project Navigator of your application's Xcode project.
@@ -140,11 +140,11 @@ let iterator = countryKit.makeIterator()
 
 ## License
 
-[![License MIT](https://img.shields.io/badge/License-MIT-lightgrey.svg?style=flat)](https://github.com/tinrobots/CountryKit/blob/master/LICENSE.md))
+[![License MIT](https://img.shields.io/badge/License-MIT-lightgrey.svg?style=flat)](https://github.com/alemar11/CountryKit/blob/master/LICENSE.md))
 
 CountryKit is released under the MIT license. See [LICENSE](./LICENSE.md) for details.
 
 ## Contributing
 
 Pull requests are welcome!  
-[Show your ❤ with a ★](https://github.com/tinrobots/mechanica/stargazers)
+[Show your ❤ with a ★](https://github.com/alemar11/mechanica/stargazers)
