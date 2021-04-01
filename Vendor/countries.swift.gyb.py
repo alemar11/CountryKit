@@ -7,7 +7,7 @@ let _countries = [
 %{
   import json
 }%
-% with open('../Resources/countries.json') as file:
+% with open('countries.json') as file:
  % for country in json.load(file):
   %{
   name = country["name"].encode('utf-8')
