@@ -12,7 +12,11 @@ internal let frameworkName = "CountryKit"
 /// **CountryKit**
 ///
 /// CountryKit Bundle.
+#if SWIFT_PACKAGE
+internal let bundle = Bundle.module
+#else
 internal let bundle = Bundle(for: CountryKit.self)
+#endif
 
 /// **CountryKit**
 final public class CountryKit {
